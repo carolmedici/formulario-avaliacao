@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /*cores*/
+        --cor-cabecalho: #293241;
+        --cor-botao: #F67669;
+        --cor-body: #BFD7E4;
+        --cor-fonte: #253B51;
+        --cor-caixa: #FAFAFC;
+        --cor-borda: #E6E6F0;
+        --cor-titulo: #253B51;
+;
+        
+
+    /*fontes*/
+        --font-titulo: 'Staatliches', cursive;
+        --font-subtitulo: 'Poppins', sans-serif;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    background: var(--cor-cabecalho);
+    width: 100%;
+    height: 465px;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+
+}
+
+body{
+    background: var(--cor-body);
+}
+
+header h1{
+    padding-top: 110px;
+    margin-left: 579px;
+    font-family: var(--font-titulo);
+    color: white;
+    font-weight: 400;
+    font-size: 36px;
+    
+}
+
+header p{
+    font-family: var(--font-subtitulo);
+    color: white;
+    margin-left: 524px;
+    font-weight: 400;
+    font-size: 16px;
+   }
+
+img{
+    margin: 10px 500px 32px 600px ;
+}
+
+form{
+    background-color: white;
+    width: 750px;
+    height: 1075px;
+    left: 345px;
+    top: 320px;
+    border-radius: 0 0 20px 20px;
+    margin: 0 345px 528px 345px ;
+    padding: 64px;
+    box-sizing: border-box;
+
+    
+}
+
+fieldset{
+    border: none;
+}
+
+fieldset legend {
+    font-family: var(--font-titulo);
+    color: var(--cor-titulo);
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 400;
+    width: 100%;
+    border-bottom: 1px solid var(--cor-borda) ;
+    padding-bottom: 8px;
+    margin-bottom: 28px;
+    padding-top: 30px;
+    text-align: center;
+    
+}
+
+h2{
+margin: 0 345px 0 345px;
+width: 750px;
+padding: 54px 0;
+font-weight: 400;
+font-size: 24px;
+background: var(--cor-botao);
+font-family: var(--font-titulo);
+color: white;
+text-align: center;
+border-radius: 20px 20px 0 0 ;
+vertical-align: middle;
+}
+
+
+label{
+    font-family: var(--font-subtitulo);
+    color: var(--cor-fonte);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+ }
+
+.input-wrapper input{
+    height: 55px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    
+    background: var(--cor-caixa);
+    box-decoration-break: none;
+    margin-bottom: 16px;
+    padding: 0 24px;
+}
+
+.input-wrapper label span{
+    margin-left: 9px;
+    color: var(--cor-borda);
+}
+
+.nome{
+    display: flex;
+    gap: 22px;
+}
+    
+.nome input{
+    height: 56px;
+    width: 250px;
+}
+    
+
+
+
+textarea{
+    height: 166px;
+    
+    
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    width: 100%;
+    background: var(--cor-caixa);
+
+}
+
+.checkbox input{
+    height: 23px;
+    width: 24px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    background: var(--cor-caixa);
+    vertical-align: middle;
+
+}
+
+.mentoria{
+    display: flex;
+    gap: 10px;
+}
+
+.mentoria > div:nth-child(1){
+    width: 100%;
+    padding-right: 22px;
+}
+
+
+
+button {
+    padding: 14px;
+    background: var(--cor-botao);
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    width: 100%;
+    color: white;
+    border: none;
+    font-family: var(--font-titulo);
+    margin: 64px 0;
+  }
