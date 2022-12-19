@@ -124,7 +124,7 @@ label{
     flex-direction: column;
  }
 
-.input-wrapper input{
+.input-wrapper input, select{
     height: 55px;
     border: 1px solid var(--cor-borda);
     border-radius: 8px;
